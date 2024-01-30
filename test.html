@@ -1,94 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et" dir="ltr">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Harj9test</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
-  <div class="container mt-5">
-    <div class="row mb-3">
-      <div class="col">
-        <h1><button type="button" class="btn btn-success">+ Lisa inimne</button></h1>
-      </div>
-      <div class="col d-flex justify-content-end">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Icons</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://kit.fontawesome.com/5ec7458c04.js" crossorigin="anonymous"></script>
 
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Otsi...">
-          <button class="btn btn-success" type="button" id="button-addon2">Otsi</button>
+  <style>
+    .top-element {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      background-color: white;
+    }
+
+    .right-aligned-text {
+      text-align: right;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .center-heading {
+      text-align: center;
+    }
+
+    .custom-card-body {
+      background-color: #000000d8;
+    }
+
+    .text-white {
+      color: white;
+    }
+  </style>
+</head>
+
+
+<body class="container mt-5">
+  <div class="row float-right">
+    <div class="col">
+    sss
+    
+    </div>
+  </div>
+  <div class="container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark" href="#" style="font-size: larger; font-weight: bold;">MarkusPilv</a>
+        <div class="d-flex justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="#">Avaleht</a>
+              </li>
+              <li class="nav-item">
+                <a href="liivakast.hkhk.edu.ee/mpilv" class="nav-link text-dark" href="#">Tooted</a>
+              </li>
+              <li class="nav-item">
+                <a href="liivakast.hkhk.edu.ee/mpilv" class="nav-link disabled text-dark" aria-disabled="true">Teenused</a>
+              </li>
+              <li>
+                <a href="liivakast.hkhk.edu.ee/mpilv" class="btn btn-primary" target="_blank">Kontakt</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <table class="table table-striped table-hover">
-      <thead class="table-dark">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Pilt</th>
-          <th scope="col">Eesnimi</th>
-          <th scope="col">Perenimi</th>
-          <th scope="col">Gmail</th>
-          <th scope="col"></th>
-          <th scope="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td><img src="https://picsum.photos/id/684/40/40" alt=""></td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>imretard@gmail.com</td>
-          <td><button type="button" class="btn btn-warning">Muuda</button></td>
-          <td><button type="button" class="btn btn-danger">Kustuta</button></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td><img src="https://picsum.photos/id/684/40/40" alt=""></td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>imretard@gmail.com</td>
-          <td><button type="button" class="btn btn-warning">Muuda</button></td>
-          <td><button type="button" class="btn btn-danger">Kustuta</button></td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td><img src="https://picsum.photos/id/684/40/40" alt=""></td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>imretard@gmail.com</td>
-          <td><button type="button" class="btn btn-warning">Muuda</button></td>
-          <td><button type="button" class="btn btn-danger">Kustuta</button></td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td><img src="https://picsum.photos/id/684/40/40" alt=""></td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>imretard@gmail.com</td>
-          <td><button type="button" class="btn btn-warning">Muuda</button></td>
-          <td><button type="button" class="btn btn-danger">Kustuta</button></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Pagination -->
-  <div class="container">
-    <nav aria-label="Page navigation" class="mt-3">
-      <ul class="pagination justify-content-start">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
     </nav>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rfApZMu8dKJ+1VQvf5K0ogT5qQz7UVVr8N6w2/kCzI0Y53LdY3p81t7tIS/n6IYb" crossorigin="anonymous"></script>
-</body
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://www.metshein.com/kordamine/bs1%20man.jpg" class="img-fluid" alt="Placeholder Image">
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="lead" style="font-size: 60px;">Tõestan, et oskan Bootstrappi</h2>
+        <p class="lead" style="font-size: 25px;">Tegelikult oskan täiega HTML, CSS ja Bootstrap APIt. Kahjuks olen liiga laist!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h1 class="center-heading lead" style="font-size: 45px;">Meie Teenused</h1>
+    <h3 class="center-heading lead">Otsingu luubil saan klikkida ja kuvatakse hüpikmenüüna otsingukast!</h3>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-euro-sign fa-4x" style="color: red;"></i>
+            <p>Lorem ipsum</p>
+            <h5 class="card-title">Business</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod itaque quasi ullam rem nemo nam, nulla totam fugit nobis velit aliquam optio dicta eligendi illum laudantium accusamus quam natus suscipit!</p>
+            <div>
+              <button type="button" class="btn btn-primary float-right">Loe siit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body custom-card-body text-white">
+            <i class="fa-solid fa-bag-shopping fa-4x" style="color:rgb(0, 140, 255);"></i>
+            <p>Lorem ipsum</p>
+            <h5 class="card-title">Business</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error repudiandae soluta odio nihil numquam ut, cum atque libero earum quod sit nisi, vel aliquam natus praesentium dolorum, nostrum totam qui!</p>
+            <div>
+              <button type="button" class="btn btn-primary float-right">Loe siit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-taxi fa-4x" style="color: rgb(79, 189, 79);"></i>
+            <p>Lorem ipsum</p>
+            <h5 class="card-title">Business</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ullam deleniti maxime molestias suscipit perferendis, eaque esse eum corporis, voluptatibus aperiam sint cumque adipisci? Corporis cum aut iste consequatur repudiandae!</p>
+            <div>
+              <button type="button" class="btn btn-primary float-right">Loe siit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h1 class="center-heading lead" style="font-size: 50px;">Meie tehtud tööd</h1>
+    <h3 class="center-heading lead">Seekord pääsesin selliselt</h3>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
